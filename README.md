@@ -45,6 +45,28 @@ The layer PDFs are drawn from the Gerber files, so they show exactly what is sen
 Pages: L1 top copper, L2 ground, L3 signal, L4 power, L5 ground, L6 bottom copper, top and bottom silkscreen,
 top and bottom solder mask openings, top and bottom paste. The bottom-side layers are drawn as seen from the top (not mirrored).
 
+## Routing without the copper pours
+
+The three signal layers and the power layer drawn with the copper pours removed, so only tracks, pads and vias remain.
+A vector PDF of each picture is in [`docs/routing_without_pours/`](docs/routing_without_pours/).
+The complete layers, with pours, are in [`docs/layers/`](docs/layers/).
+
+**L1 Top (signal)**
+
+![L1 routing](docs/routing_without_pours/L1_Top_routing.png)
+
+**L3 (inner signal)**
+
+![L3 routing](docs/routing_without_pours/L3_Signal_routing.png)
+
+**L6 Bottom (signal)**, seen from the top side, not mirrored
+
+![L6 routing](docs/routing_without_pours/L6_Bottom_routing.png)
+
+**L4 (power)**. The rails on this layer are copper pours, so without them only the vias and three short tracks remain.
+
+![L4 routing](docs/routing_without_pours/L4_Power_routing.png)
+
 ## Stack-up
 
 Six layers, JLCPCB stack-up **JLC06161H-3313**, ordered as 1.6 mm (finished about 1.54 mm).
@@ -82,7 +104,7 @@ L3 is much closer to L4 than to L2, so the L3 tracks use L4 as their reference p
 | `design/kicad/` | KiCad 10 copy of the PCB |
 | `fabrication/` | Gerber and drill files, BOM and pick-and-place files in JLCPCB format, polarity table, assembly drawings |
 | `schematic/` | The 12 schematic pages as PNG |
-| `docs/` | Layer PDFs, board renders and the stack-up drawing |
+| `docs/` | Layer PDFs, routing pictures without pours, board renders and the stack-up drawing |
 
 ## Notes
 
