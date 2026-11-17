@@ -7,20 +7,20 @@ four Intan RHD headstage ports, Gigabit Ethernet, USB, SD card and a USB JTAG/UA
 
 ## How to open the design
 
-The design was made in **EasyEDA Pro** (Chinese name: 嘉立创EDA专业版), version 4.1.97.
-A converted **KiCad** copy of the PCB is included as well.
+The easiest way to look at the board is the **KiCad** copy or the **layer PDFs** below.
+The original design was made in **EasyEDA Pro** (Chinese name: 嘉立创EDA专业版), version 4.1.97.
 
 ### EasyEDA Pro (original, schematic + PCB)
 
 File: **`design/easyeda/K26_CLIF_RevA.epro2`**
 
-1. Get EasyEDA Pro. It is free.
-   - Web version, nothing to install: <https://pro.easyeda.com/editor>
-   - Desktop version (Windows, macOS, Linux): <https://easyeda.com/page/download>
-2. In the editor choose **File → Import → EasyEDA (Professional)** and select the `.epro2` file.
-3. The project opens with the schematic (12 pages) and the 6-layer PCB.
+- The file was made with the 4.1 release line of the editor. Use version 4.1.97 or newer.
+- Web editor with version 4.1: <https://pro.lceda.cn/editor> (the China site; it needs a free account on that site, and the interface language can be set to English).
+- Desktop version: <https://lceda.cn/page/download>.
+- Open it with **File → Import → EasyEDA (Professional)** and select the `.epro2` file.
+- The international site <https://pro.easyeda.com/editor> runs version 3.2 at the time of writing. Importing this file there has not been tested and may fail.
 
-This file is the reference. It contains the schematic, the PCB, the footprints and the design rules.
+This file is the reference. It contains the schematic (12 pages), the 6-layer PCB, the footprints and the design rules.
 
 ### KiCad (converted copy, PCB only)
 
