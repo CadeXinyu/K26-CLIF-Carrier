@@ -67,7 +67,7 @@ The complete layers as manufactured are in [`docs/layers/`](docs/layers/).
 **L4 (power), rail pours shown.** The board-wide 3.3 V pour is hidden: 3.3 V fills all the light grey area
 that is not taken by another rail.
 
-![L4 power rails](docs/routing_without_pours/L4_Power_rails.png)
+![L4 power rails](docs/routing_without_pours/L4_Power_rails_widened.png)
 
 ## Stack-up
 
