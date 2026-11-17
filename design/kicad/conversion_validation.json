@@ -1,0 +1,33 @@
+{
+  "source_file": "../easyeda/K26_CLIF_RevA.epro2",
+  "source_sha256": "f1121fc5e281b10cd991b39010013871bc10f00e706a88f5d16b4b076a84ac8c",
+  "pcb_file": "K26_CLIF_RevA.kicad_pcb",
+  "pcb_sha256": "2cde8c7a199c7524948d7055a949171d161c48cc28d2a5e8bc2042983c33e986",
+  "pcb_bytes": 33712405,
+  "target_KiCad_version": "10.0",
+  "named_components": 323,
+  "standalone_pad_footprints": 66,
+  "pads": 2240,
+  "straight_tracks": 6898,
+  "arcs": 19,
+  "vias_including_12_footprint_thermal_vias": 1586,
+  "component_mismatches": 0,
+  "pad_net_size_drill_mismatches": 0,
+  "trace_via_arc_matches_within_1um": 8503,
+  "source_copper_zones_restored": 46,
+  "fill_net_layer_groups": 30,
+  "maximum_fill_symmetric_difference_fraction": 3.29764047559891e-05,
+  "fill_area_difference_outside_2um_mm2": 0.0,
+  "simplification_tolerance_mm": 0.0001,
+  "zone_refill_called": false,
+  "coordinate_offset_mm": [
+    50,
+    70
+  ],
+  "limits": [
+    "PCB only; KiCad schematic not supplied.",
+    "Rules, full fabrication stackup and 3D assets are not fully migrated.",
+    "Do not refill until design rules and zone behavior are migrated and checked.",
+    "Conversion preserves source design issues; geometry checks are not a manufacturing or SI signoff."
+  ]
+}

@@ -28,8 +28,9 @@ File: **`design/kicad/K26_CLIF_RevA.kicad_pro`** (open with KiCad 10 or newer)
 
 - It contains the PCB: all six copper layers, tracks, vias, copper pours, silkscreen and the board outline.
 - It does not contain the schematic.
-- The EasyEDA design rules are not carried over, so the KiCad design rule check reports false errors. Use this copy for viewing and measuring.
-- Do not press "Fill all zones" (key B). The copper pours are stored as exported from EasyEDA, and KiCad would fill them differently.
+- The complete EasyEDA design rules are not carried over. KiCad DRC results need review against the original rules; successful import does not establish manufacturing compliance. Use this copy for viewing and measuring.
+- Do not press "Fill all zones" (key B) before migrating and checking the rules. The saved copper has been checked against the original EasyEDA fill; KiCad would refill it differently.
+- The 2026-11-17 checked export restores conversion omissions in cage-ground nets, embedded thermal vias, short segments and saved copper. See [conversion details](design/kicad/README.md).
 
 ### No software
 
@@ -49,25 +50,25 @@ top and bottom solder mask openings, top and bottom paste. The bottom-side layer
 
 The three signal layers are drawn with the copper pours removed, so only tracks, pads and vias remain.
 The power layer is drawn with its rail pours, one colour per rail.
-A vector PDF of each picture is in [`docs/routing/`](docs/routing/).
+A vector PDF of each picture is in [`docs/routing_b/`](docs/routing_b/).
 The complete layers as manufactured are in [`docs/layers/`](docs/layers/).
 
 **L1 Top (signal), pours removed**
 
-![L1 routing](docs/routing/L1_Top_routing.png)
+![L1 routing](docs/routing_b/L1_Top_routing.png)
 
 **L3 (inner signal), pours removed**
 
-![L3 routing](docs/routing/L3_Signal_routing.png)
+![L3 routing](docs/routing_b/L3_Signal_routing.png)
 
 **L6 Bottom (signal), pours removed**, seen from the top side, not mirrored
 
-![L6 routing](docs/routing/L6_Bottom_routing.png)
+![L6 routing](docs/routing_b/L6_Bottom_routing.png)
 
 **L4 (power), rail pours shown.** The board-wide 3.3 V pour is hidden: 3.3 V fills all the light grey area
 that is not taken by another rail.
 
-![L4 power rails](docs/routing/L4_Power_rails.png)
+![L4 power rails](docs/routing_b/L4_Power_rails.png)
 
 ## Stack-up
 
@@ -111,9 +112,6 @@ L3 is much closer to L4 than to L2, so the L3 tracks use L4 as their reference p
 ## Notes
 
 - The `.epro2` file is the reference. The Gerber, BOM and pick-and-place files were exported from it.
-- The schematic pictures of pages 01 (power), 05 (Ethernet) and 09 (FMC) are slightly older than the
-  project file. They do not show the last small changes: the power test jumper JP701 with R741,
-  the 4.7 µF Ethernet PHY reset capacitor, and FMC pins G8, G20 and G35 tied to ground.
 - The two SOM connectors, the FMC connector and the Intan connectors are not in the assembly BOM.
   They are fitted by hand.
 - The board has not been built or tested yet.
