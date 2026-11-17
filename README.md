@@ -50,25 +50,25 @@ top and bottom solder mask openings, top and bottom paste. The bottom-side layer
 
 The three signal layers are drawn with the copper pours removed, so only tracks, pads and vias remain.
 The power layer is drawn with its rail pours, one colour per rail.
-A vector PDF of each picture is in [`docs/routing_b/`](docs/routing_b/).
+A vector PDF of each picture is in [`docs/routing_c/`](docs/routing_c/).
 The complete layers as manufactured are in [`docs/layers/`](docs/layers/).
 
 **L1 Top (signal), pours removed**
 
-![L1 routing](docs/routing_b/L1_Top_routing.png)
+![L1 routing](docs/routing_c/L1_Top_routing.png)
 
 **L3 (inner signal), pours removed**
 
-![L3 routing](docs/routing_b/L3_Signal_routing.png)
+![L3 routing](docs/routing_c/L3_Signal_routing.png)
 
 **L6 Bottom (signal), pours removed**, seen from the top side, not mirrored
 
-![L6 routing](docs/routing_b/L6_Bottom_routing.png)
+![L6 routing](docs/routing_c/L6_Bottom_routing.png)
 
 **L4 (power), rail pours shown.** The board-wide 3.3 V pour is hidden: 3.3 V fills all the light grey area
 that is not taken by another rail.
 
-![L4 power rails](docs/routing_b/L4_Power_rails.png)
+![L4 power rails](docs/routing_c/L4_Power_rails.png)
 
 ## Stack-up
 
