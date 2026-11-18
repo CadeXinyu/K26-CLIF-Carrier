@@ -49,26 +49,26 @@ top and bottom solder mask openings, top and bottom paste. The bottom-side layer
 ## Routing and power pours
 
 The three signal layers are drawn with the copper pours removed, so only tracks, pads and vias remain.
-The power layer is drawn with its rail pours, one colour per rail.
-A vector PDF of each picture is in [`docs/routing_d/`](docs/routing_d/).
+The power layer is drawn with its rail and ground pours, one colour per net.
+A vector PDF of each picture is in [`docs/routing_e/`](docs/routing_e/).
 The complete layers as manufactured are in [`docs/layers/`](docs/layers/).
 
 **L1 Top (signal), pours removed**
 
-![L1 routing](docs/routing_d/L1_Top_routing.png)
+![L1 routing](docs/routing_e/L1_Top_routing.png)
 
 **L3 (inner signal), pours removed**
 
-![L3 routing](docs/routing_d/L3_Signal_routing.png)
+![L3 routing](docs/routing_e/L3_Signal_routing.png)
 
 **L6 Bottom (signal), pours removed**, seen from the top side, not mirrored
 
-![L6 routing](docs/routing_d/L6_Bottom_routing.png)
+![L6 routing](docs/routing_e/L6_Bottom_routing.png)
 
-**L4 (power), rail pours shown.** The board-wide 3.3 V pour is hidden: 3.3 V fills all the light grey area
-that is not taken by another rail.
+**L4 (power), rail pours and ground pours shown.** The board-wide 3.3 V pour is hidden: 3.3 V fills all the light grey area
+that is not taken by another pour. The green areas are ground: the reference under the QSFP pairs and under the PCIe pairs that run on L3 (black lines).
 
-![L4 power rails](docs/routing_d/L4_Power_rails.png)
+![L4 power rails](docs/routing_e/L4_Power_rails.png)
 
 ## Stack-up
 
